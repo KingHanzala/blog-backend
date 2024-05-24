@@ -8,20 +8,8 @@
     ],
     "routes": [
       {
-        "src": "/api/posts",
-        "dest": "index.js"
-      },
-      {
-        "src": "/api/posts/:id",
-        "dest": "index.js"
-      },
-      {
-        "src": "/api/posts/create",
-        "dest": "index.js"
-      },
-      {
-        "src": "/api/posts/:id/delete",
-        "dest": "index.js"
+        "src": "/(.*)",
+        "dest": "/"
       }
     ]
   }
