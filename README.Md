@@ -7,6 +7,5 @@ JWT_SECRET, ADMIN_SECRET, MONGO_KEY, PORT
 
 Follow me on my Social Media accounts:
 
+Owner: Hanzala
 Github: https://github.com/KingHanzala
-Leetcode: https://leetcode.com/u/kingertugrul/
-Twitter: https://twitter.com/kinghanzala_
