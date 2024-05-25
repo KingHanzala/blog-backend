@@ -6,6 +6,6 @@ const router = express.Router();
 router.post('/posts', authMiddleware, createPost);
 router.get('/posts', getAllPosts);
 router.get('/posts/:id', getPostById);
-router.delete('/posts/:id', deletePost);
+router.delete('/posts/:id',authMiddleware, deletePost);
 
 module.exports = router;
