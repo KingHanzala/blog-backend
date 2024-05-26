@@ -38,7 +38,7 @@ async function sendEmail(bodyObject, emailList, subject) {
 
   const mailOptions = {
     from: process.env.EMAIL_USER,
-    to: emailList,
+    bcc: emailList,
     subject: subject,
     html: generateEmailHtml(bodyObject),
   };
