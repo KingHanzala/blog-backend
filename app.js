@@ -1,5 +1,4 @@
 require('dotenv').config();
-const serverless = require('serverless-http');
 const express = require('express');
 const cors = require('cors');
 const connectDB = require('./config/db');
@@ -21,4 +20,5 @@ app.use('/api', authRoutes);
 app.use('/api', postRoutes);
 app.use('/api', subscriptionRoutes);
 
-module.exports.handler = serverless(app);
+const PORT = process.env.PORT || 5001;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
